@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+        <h1>Ambulance Booking System</h1>
+    </header>
+    
+    <main>
+        <section id="booking-form">
+            <h2>Book an Ambulance</h2>
+            <form id="ambulance-booking-form">
+                <label for="size">Ambulance Size:</label>
+                <select id="size" name="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                
+                <label for="pick-up-point">Pick-Up Point:</label>
+                <input type="text" id="pick-up-point" name="pick-up-point" required>
+                
+                <label for="hospital">Hospital:</label>
+                <input type="text" id="hospital" name="hospital" required>
+                
+                <label for="date-time">Date & Time:</label>
+                <input type="datetime-local" id="date-time" name="date-time" required>
+                
+                <button type="submit">Book Ambulance</button>
+            </form>
+        </section>
+        
+        <section id="bookings-list">
+            <h2>All Bookings</h2>
+            <ul id="bookings">
+                <!-- Bookings will be listed here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <body>
+        <header>
+           
